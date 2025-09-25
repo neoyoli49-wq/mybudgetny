@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - MyBudgetNY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="user-profile">
+            <h3 id="profile-name-display"></h3>
+            <p id="profile-email-display"></p>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html">🏠 Dashboard</a></li>
+                <li><a href="categories.html">📋 Categories</a></li>
+                <li><a href="predictor.html">📈 Predictor</a></li>
+                <li><a href="settings.html">⚙️ Settings</a></li>
+                <li><a href="contact.html">📞 Contact Us</a></li>
+                <li><a href="#" id="logout-btn">➡️ Log Out</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container category-container">
+        <h1>Detailed Categories</h1>
+        <p class="category-info">Click a headline to expand it. Enter an amount and it will be automatically saved.</p>
+        <div class="category-list">
+            
+            <div class="category-group">
+                <h3 class="category-header income">Income</h3>
+                <div class="subcategory-list">
+                    <h4>Allowance</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="income" data-category-name="Allowance">
+                    <h4>Income after tax</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="income" data-category-name="Income after tax">
+                    <h4>Income from self-employment</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="income" data-category-name="Income from self-employment">
+                    <h4>Other income</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="income" data-category-name="Other income">
+                    <h4>Sick pay</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="income" data-category-name="Sick pay">
+                </div>
+            </div>
+
+            <div class="category-group">
+                <h3 class="category-header expense">Household bills</h3>
+                <div class="subcategory-list">
+                    <h4>Home insurance</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="expense" data-category-name="Home insurance">
+                    <h4>Mortgage payment</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="expense" data-category-name="Mortgage payment">
+                    <h4>Rent</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="expense" data-category-name="Rent">
+                    <h4>Mortgage life insurance</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="expense" data-category-name="Mortgage life insurance">
+                </div>
+            </div>
+            
+            <div class="category-group">
+                <h3 class="category-header expense">Living costs</h3>
+                <div class="subcategory-list">
+                    <h4>Food and drink</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="expense" data-category-name="Food and drink">
+                    <h4>Takeaways</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="expense" data-category-name="Takeaways">
+                    <h4>Alcohol at home</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="expense" data-category-name="Alcohol at home">
+                    <h4>Lunches and snacks</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="expense" data-category-name="Lunches and snacks">
+                    <h4>Clothes</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="expense" data-category-name="Clothes">
+                    <h4>Shoes</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="expense" data-category-name="Shoes">
+                    <h4>Toiletries</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="expense" data-category-name="Toiletries">
+                    <h4>Subscriptions</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="expense" data-category-name="Subscriptions">
+                </div>
+            </div>
+            
+            <div class="category-group">
+                <h3 class="category-header expense">Finance</h3>
+                <div class="subcategory-list">
+                    <h4>Regular saving per week</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="expense" data-category-name="Regular saving per week">
+                    <h4>Lump sum savings</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="expense" data-category-name="Lump sum savings">
+                    <h4>Loans</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="expense" data-category-name="Loans">
+                </div>
+            </div>
+            
+            <div class="category-group">
+                <h3 class="category-header expense">Family and friends</h3>
+                <div class="subcategory-list">
+                    <h4>Pocket money</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="expense" data-category-name="Pocket money">
+                    <h4>Activities</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="expense" data-category-name="Activities">
+                    <h4>Allowance</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="expense" data-category-name="Allowance">
+                </div>
+            </div>
+            
+            <div class="category-group">
+                <h3 class="category-header expense">Travel</h3>
+                <div class="subcategory-list">
+                    <h4>Trains</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="expense" data-category-name="Trains">
+                    <h4>Buses</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="expense" data-category-name="Buses">
+                    <h4>Taxis</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="expense" data-category-name="Taxis">
+                    <h4>Air travel</h4>
+                    <input type="number" placeholder="Amount (ZAR)" class="category-amount-input" data-category-type="expense" data-category-name="Air travel">
+                </div>
+            </div>
+        </div>
+        <a href="index.html" class="back-link">Back to Dashboard</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

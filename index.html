@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Budget Planner - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="user-profile">
+            <h3 id="profile-name-display"></h3>
+            <p id="profile-email-display"></p>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html">🏠 Dashboard</a></li>
+                <li><a href="categories.html">📋 Categories</a></li>
+                <li><a href="predictor.html">📈 Predictor</a></li>
+                <li><a href="settings.html">⚙️ Settings</a></li>
+                <li><a href="contact.html">📞 Contact Us</a></li>
+                <li><a href="#" id="logout-btn">➡️ Log Out</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Budget Planner NY</h1>
+        </div>
+
+        <div class="summary-section">
+            <div class="summary-box">
+                <h2>Total Income</h2>
+                <p id="total-income">R0.00</p>
+            </div>
+            <div class="summary-box">
+                <h2>Total Expenses</h2>
+                <p id="total-expenses">R0.00</p>
+            </div>
+            <div class="summary-box">
+                <h2>Net Savings</h2>
+                <p id="net-savings">R0.00</p>
+            </div>
+        </div>
+
+        <div class="chart-section">
+            <h2>Spending Breakdown</h2>
+            <canvas id="budget-chart"></canvas>
+        </div>
+
+        <div class="chart-section">
+            <h2>Savings Progress</h2>
+            <canvas id="savings-chart"></canvas>
+        </div>
+
+        <div class="transactions-grid-section">
+            <h2>Transaction History</h2>
+            <div id="transactions-grid-container">
+                </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

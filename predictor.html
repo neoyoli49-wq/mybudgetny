@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictor - MyBudgetNY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="user-profile">
+            <h3 id="profile-name-display"></h3>
+            <p id="profile-email-display"></p>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html">🏠 Dashboard</a></li>
+                <li><a href="categories.html">📋 Categories</a></li>
+                <li><a href="predictor.html">📈 Predictor</a></li>
+                <li><a href="settings.html">⚙️ Settings</a></li>
+                <li><a href="contact.html">📞 Contact Us</a></li>
+                <li><a href="#" id="logout-btn">➡️ Log Out</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container predicted-container">
+        <h1>Budget Predictor</h1>
+        <p>This tool predicts your next month's savings based on your recent spending habits. Please add more transactions over time to improve its accuracy.</p>
+        <canvas id="predicted-chart"></canvas>
+        <div class="advice-tool">
+            <h2>Your Financial Advice</h2>
+            <p id="advice-output">Not enough data for a prediction. Please add transactions over a few months to see a forecast!</p>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

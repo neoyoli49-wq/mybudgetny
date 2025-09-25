@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - MyBudgetNY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="user-profile">
+            <h3 id="profile-name-display"></h3>
+            <p id="profile-email-display"></p>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html">🏠 Dashboard</a></li>
+                <li><a href="categories.html">📋 Categories</a></li>
+                <li><a href="predictor.html">📈 Predictor</a></li>
+                <li><a href="settings.html">⚙️ Settings</a></li>
+                <li><a href="contact.html">📞 Contact Us</a></li>
+                <li><a href="#" id="logout-btn">➡️ Log Out</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container settings-content">
+        <h1>Account Settings</h1>
+
+        <div class="profile-info">
+            <h2>Your Profile Information</h2>
+            <p><strong>Name:</strong> <span id="user-name"></span></p>
+            <p><strong>Surname:</strong> <span id="user-surname"></span></p>
+            <p><strong>Email:</strong> <span id="user-email-info"></span></p>
+            <p><strong>Address:</strong> <span id="user-address"></span></p>
+        </div>
+        
+        <div class="password-change-form">
+            <h2>Change Your Password</h2>
+            <form id="password-form">
+                <input type="password" id="old-password" placeholder="Current Password" required>
+                <input type="password" id="new-password" placeholder="New Password" required>
+                <input type="password" id="confirm-password" placeholder="Confirm New Password" required>
+                <button type="submit">Update Password</button>
+            </form>
+        </div>
+
+        <div class="password-change-form" style="margin-top: 20px;">
+            <h2>Update Your Address</h2>
+            <form id="update-profile-form">
+                <input type="text" id="update-address" placeholder="Enter new address" required>
+                <button type="submit">Update Address</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

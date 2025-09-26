@@ -311,3 +311,25 @@ body {
     text-decoration: none;
     text-align: center;
 }
+
+.error-message {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-top: 10px;
+    height: 1.2em;
+}
+
+/* New CSS for on-page messages */
+.feedback-message {
+    font-weight: bold;
+    margin-top: 10px;
+    height: 1.2em;
+}
+
+.feedback-message.success {
+    color: #2ecc71; /* Green color for success messages */
+}
+
+.feedback-message.error {
+    color: #e74c3c; /* Red color for error messages */
+}
